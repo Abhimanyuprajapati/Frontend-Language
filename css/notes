@@ -1,0 +1,20 @@
+if we give the same Element same id and same class 
+if will prefer to id first
+
+eg.
+
+<p class="a1" id="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Totam ipsum nisi cupiditate! Quis quibusdam esse, laudantium illum 
+    mollitia omnis aspernatur quisquam, labore ab totam enim porro 
+    culpa eaque harum itaque.
+</p>
+
+
+style
+a1{
+    color:red;
+}
+a2{
+    color:pink;
+}
+on display it will show pink background color because it prefer to id first and then class
