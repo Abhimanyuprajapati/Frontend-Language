@@ -19,5 +19,52 @@ Instructions:
 4. The radio buttons for gender should have name attribute as gender.
 5. All input elements must also have corresponding labels with for attribute set to id's of element they belong.
 For example, the label for input of name will be <label for="name"> Name</label> -->
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- html code goes here -->
+  <form method="post">
+    <input type="text" name="name" id="name" required>
+    <label for="name">Name</label>
+    <br><br>
+    
+    <input type="email" name="email" id="email" required>
+    <label for="email">Email</label>
+    <br><br>
+   
+    <input type="radio" name="gender" id="male" required>
+     <label for="male">M</label>
+   
+    <input type="radio" name="gender" id="female" required>
+     <label for="female">F</label>
+    <br><br>
+   
+    <select name="CarBrands" id="cars">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedez">Mercedez</option>
+    </select>
+     <label for="cars">CarBrands</label>
+    <br><br>
+   
+    <input type="number" name="age" id="age" required>
+     <label for="age">Age</label>
+    <br><br>
+   
+    <input type="date" name="dob" id="dob" required>
+     <label for="dob">DOB</label>
+    <br><br>
+   
+    <input type="password" name="password" id="password" required>
+     <label for="password">Password</label>
+    <br><br>
+    <button type="submit" value="submit">Submit</button>
+  </form>
+</body>
+</html>
