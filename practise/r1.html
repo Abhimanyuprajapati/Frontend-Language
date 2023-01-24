@@ -1,0 +1,35 @@
+<!-- input of type text with id #text, this will be a required field
+
+input of type textarea with id #message, this will be a required field
+
+input of type email with id #email, this will be a required field
+
+input of type number with id #rate and range 0-5
+
+a html button with id #submit
+
+
+
+Note: Every input must have a label with id #{inputid}-label -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="#text">text</label>
+    <input type="text" id="#text" required>
+    <label for="#message">message</label>
+    <input type="textarea" id="#message" required>
+    <label for="#email">email</label>
+    <input type="email" id="#email" required>
+    <label for="#rate">rate</label>
+    <input type="number" id="#rate" min="0" max="5">
+    <label for="#submit">submit</label>
+    <input type="button" value="button" id="#submit">
+</body>
+</html>
