@@ -1,14 +1,20 @@
-<!-- Dynamic- css- frontend
-Create a div with class='text-here' id='text container' containing some example text inside it.
+<!-- HTML Feedback form
+Create a form with the heading "Feedback Form" with the following elements, and use the appropriate type required.
 
-Create a textbox with id colorbox to change the color of the above text according to value entered in the textbox on a button click.
+Element for getting the name with the id "name," which must have at least 3 characters and a maximum of 50 characters to be valid.
 
-Create a range input type for changing the size of the text. Default should be 55. The sizes should vary from 10 to 100. Create 3 buttons to change the text to bold italics underline and vice versa.
+The element with the id "portfolio" is used to take the URL of the user's webpage.
 
-Make a dropdown list containing the basic 5 font families and upon selection the font of the above text should change accordingly.
+In order for the form to be submitted, the Name and Portfolio entries must have the relevant attribute.
 
-Create another button which gives the above set css properties of the text in a way which can be straightaway copied to make any other text appear like the one in the div text-container.
-NOTE :The buttons should have class stylebt. -->
+The element with the id "favColor" allows the user to select their favourite colour.
+
+A slider element with an id="likeness" that has a minimum value of one and a maximum value of 100 for determining how much they like their colour.
+
+All input elements must have labels with the for property set to the ids of the elements to which they belong.
+
+Example label for input of name will be <label for="name">Name</label> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +24,19 @@ NOTE :The buttons should have class stylebt. -->
     <title>Document</title>
 </head>
 <body>
-    <div class="text-here">
-        <div id="text container">
-            hello
-            
-        </div>
-    </div>
+  <h1>Feedback Form</h1>
+  <form action="" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" min="3" max="50" required>
+    <br>
+    <label for="portfolio">PortFolio</label>
+    <input type="url" name="portfolio" id="portfolio" required>
+    <br>
+    <label for="favColor">color?</label>
+    <input type="color" name="favColor" id="favColor" required>
+    <br>
+    <label for="likeness">Range</label>
+    <input type="range" name="likeness" id="likeness" min="1" max="100" required>
+  </form>
 </body>
 </html>
