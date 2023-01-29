@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First child selector in css</title>
+</head>
+<style>
+   li[id]{      /* this is called attribute selector*/
+    background-color: pink;
+    color: black;
+   }
+   input[type]{
+   border: 10px solid aqua;
+   }
+</style>
+<body>
+    <ol>
+    <li>abhimanyu</li>
+    <li>pencil</li>
+    <li id="a1">sun</li>
+    <li>moon</li>
+    <li id="a2">sky</li>
+    </ol>
+    <form action="post">
+       first name <input type="text" name="name" id="name">
+       <br/>
+       middle name <input type="text" name="name" id="name">
+       <br/>
+       last name <input type="text" name="name" id="name">
+    </form>
+</body>
+</html>
