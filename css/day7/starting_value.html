@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selecting with starting value in css</title>
+    <style>
+        li:[a1^="ac"]{    /* this indicate that "^" it will select the starting  words with a1*/
+       
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>abhimanyu</li>
+        <li>pencil</li>
+        <li id="ac-akash">sun</li>
+        <li>moon</li>
+        <li id="adk">sky</li>
+        <li>abhimanyu</li>
+        <li>pencil</li>
+        <li id="abhi-ac">sun</li>
+        <li>moon</li>
+        <li>abhimanyu</li>
+        <li>pencil</li>
+        <li id="ac-abhi">sun</li>
+        <li>moon</li>
+    </ol>
+</body>
+</html>
