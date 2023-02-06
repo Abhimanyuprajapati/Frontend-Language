@@ -1,52 +1,25 @@
 <!-- 
-    Styling Netflix Landing Page - 2
-In this assignment, you will be styling the second section of the Netflix Landing Page which is the movie-section by following the below set of statements:-
+    Styling Netflix Landing Page - 3
+In this assignment, you will be styling the third section of the Netflix Landing Page which is the contact-section by following the below set of statements:-
 
 
-Set the display property of movie-section to flex. 
-It create a flexible container that adjusts the layout of its children to fit within the available space and allows you to decide how its children would appear inside
+Add a padding of 50px to the top and bottom of pricing-section
 
-Set the flex-direction of movie-section to row to render its children in row-wise manner
+Center all tables within their parent element using margin:auto
 
-Align the items within movie-section to center using align-items
+The borders of table should be collapsed into a single border. Ensure this by setting the border-collapse property of table to collapse
 
-Set the color of movie-section to rgb(255, 255, 255)
+Add a border of 1px and a color of #ccc to all td and th elements
 
-Add a padding of 20px to movie-section
+Add a padding of 10px to all td and th elements
 
-Set the width of movie-poster to 400px
+Set the height of all td and th elements to 60px
 
-Set the height of movie-poster to 450px
+Set the width of all td and th elements to 100px
 
-Center movie-poster within its parent element using margin: 0 auto
+Set the background-color of all th elements to #333
 
-Set the height of all images within movie-poster to 100%
-
-Set the width of all images within movie-poster to 100%
-
-Set the width of movie-trailer to 560px
-
-Set the height of movie-trailer to 315px
-
-Center movie-trailer within its parent element and add a margin of 15px using margin:auto 15px
-
-Set the height of all iframes within movie-trailer to 100%
-
-Set the width of all iframes of movie-trailer to 100%
-
-Set the font-size of the element with the id movie-text to 18px
-
-Set the line-height of movie-text to 1.5
-
-Set the font-size of movie-title to 20px
-
-Set the font-weight of movie-title to bold
-
-Add a margin of 10px to the bottom of movie-title
-
-Add a margin of 8px to the bottom of movie-description.
-
-Set the font-style of the movie-release-date to italic
+Set the color of all th elements to white
 
  -->
  <!DOCTYPE html>
@@ -55,7 +28,7 @@ Set the font-style of the movie-release-date to italic
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>a simple website</title>
     <style>
         body {
     margin: 0;
@@ -79,47 +52,63 @@ button {
     max-width: 300px;
     margin: auto;
   }
-  .movie-section{
-    display : flex;
-    flex-direction: row; 
-    align-items: center;
-    color:white;
-    background-color: rgb(51,51,51);
-    padding:20px;
-  }
-  .movie-poster{
+
+.movie-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+
+.movie-poster {
   width: 400px;
   height: 450px;
   margin: 0 auto;
+
 }
-.movie-poster>img{
-  width: 100%;
-  height: 100%;
+
+.movie-poster img {
+height: 100%;
+width: 100%;
 }
-.movie-trailer{
-  height: 315px;
+
+.movie-trailer {
   width: 560px;
+  height: 315px;
   margin: auto 15px;
 }
-.movie-trailer>iframe{
-    width: 100%;
-    height: 100%;
+
+.movie-trailer iframe {
+height: 100%;
+width: 100%;
 }
-#movie-text{
+
+
+#movie-text {
   font-size: 18px;
-  line-height:1.5;
+  line-height: 1.5;
 }
-.movie-title{
+
+
+.movie-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.movie-description{
+
+
+.movie-description {
   margin-bottom: 8px;
 }
-.movie-release-date{
+
+
+.movie-release-date {
   font-style: italic;
 }
+
     </style>
  </head>
  <body>
