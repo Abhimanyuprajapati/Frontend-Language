@@ -1,26 +1,37 @@
 <!-- 
-    Styling Netflix Landing Page - 3
-In this assignment, you will be styling the third section of the Netflix Landing Page which is the contact-section by following the below set of statements:-
+    Styling Netflix Landing Page - 4
+In this assignment, you will be styling the fourth section of the Netflix Landing Page which is the contact-section by following the below set of statements:-
 
 
-Add a padding of 50px to the top and bottom of pricing-section
+Set the background-color of contact-section to #222
 
-Center all tables within their parent element using margin:auto
+Set the color of contact-section to white
 
-The borders of table should be collapsed into a single border. Ensure this by setting the border-collapse property of table to collapse
+Add a padding of 50px to the top and bottom of contact-section
 
-Add a border of 1px and a color of #ccc to all td and th elements
+Center the text within contact-section with text-align
 
-Add a padding of 10px to all td and th elements
+Set the maximum width of all forms to 500px
 
-Set the height of all td and th elements to 60px
+Center all forms within their parent element using margin:auto
 
-Set the width of all td and th elements to 100px
+Add a padding of 20px to all forms
 
-Set the background-color of all th elements to #333
+Set the display property of all label, input, textarea, and button elements to block to make them a block element
 
-Set the color of all th elements to white
+Set the width of all label, input, textarea, and button elements to 100%
 
+Add a margin-bottom of 10px to all label, input, textarea, and button elements
+
+Set the color of all label elements to #ccc
+
+Set the background-color of all input and textarea elements to #333
+
+Set the color of all input and textarea elements to #ccc
+
+Remove the border from all input and textarea elements
+
+Add a padding of 10px to all input and textarea elements/li>
  -->
  <!DOCTYPE html>
  <html lang="en">
@@ -52,7 +63,6 @@ button {
     max-width: 300px;
     margin: auto;
   }
-
 .movie-section {
   display: flex;
   flex-direction: row;
@@ -61,70 +71,80 @@ button {
   color: #fff;
   padding: 20px;
 }
-
-
 .movie-poster {
   width: 400px;
   height: 450px;
   margin: 0 auto;
-
 }
-
 .movie-poster img {
 height: 100%;
 width: 100%;
 }
-
 .movie-trailer {
   width: 560px;
   height: 315px;
   margin: auto 15px;
 }
-
 .movie-trailer iframe {
 height: 100%;
 width: 100%;
 }
-
-
 #movie-text {
   font-size: 18px;
   line-height: 1.5;
 }
-
-
 .movie-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-
 .movie-description {
   margin-bottom: 8px;
 }
-
-
 .movie-release-date {
   font-style: italic;
 }
-.pricing-section{
+.pricing-section {
+  padding: 50px 0;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 60px;
+  width: 100px;
+}
+th {
+  background-color: #333;
+  color: white;
+}
+.contact-section{
+    background-color: #222;
+    color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
 }
-table{
-    margin: auto;
-    border-collapse
+form{
+    max-width: 500px ;
+    margin:auto;
+  padding: 20px;
 }
-td,th{
-    border:1px solid #ccc;
+label,input,textarea,button{
+  display:block;
+  width: 100%;
+  margin-bottom:10px;
+  color:#ccc;
+}
+input,textarea{
+  background-color: #333;
+  color: #ccc;
+  border:none;
   padding:10px;
-  height:60px;
-  width:100px;
-}
-th{
-  background-color:#333;
-  color:white;
 }
     </style>
  </head>
