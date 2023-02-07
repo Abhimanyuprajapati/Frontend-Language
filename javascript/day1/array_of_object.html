@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays of object or object of arrays</title>
+    <script>
+        var list=[
+            {
+                name:"mi",
+                gb:8,
+                price:55000,
+                wararanti:[1,2,3]
+            },
+            {
+                name:"soni",
+                gb:16,
+                price:80000
+            },
+            {
+                name:"msi",
+                gb:12,
+                price:56000
+            },
+            {
+                name:"macc",
+                gb:10,
+                price:50000
+            },
+            {
+                name:"levnovo",
+                gb:12,
+                price:56000
+            }
+        ];
+        console.log(list);
+        // how to access the first one 
+        console.log(list[0]);
+        // to aaccess the first name 
+        console.log(list[0].name);
+        console.log(list[2].price);
+
+        // how to access the waranti in list
+        console.log(list[0].wararanti[2]);
+    </script>
+</head>
+<body>
+    <p>welcome to javascript</p>
+</body>
+</html>
