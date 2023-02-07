@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a object in list</title>
+    <script>
+        // create the object
+        var personList={
+            name:"abhimanyu",
+            rollno:16,
+            city:"kalva",
+            salary:30000
+        };
+        console.log(personList);
+        console.log(personList.salary);
+        console.log(personList.address);// it will give undefine answer.
+
+        // how to update the object
+        personList.name="bilaa";
+        console.log(personList);
+        // how to delete the object
+        delete personList.rollno;   // it will delete the key "delete"
+        console.log(personList);
+        // so in object it is always related to key and value 
+        // it will create anywhere in the object
+
+        // add the object 
+        personList.address="mumbai";   // it will search the address if it is not there
+        console.log(personList);   // then it will create the address key as a address
+                                  // and value mumbai
+           // no duplicate key will be allowed in object.                       
+    </script>
+</head>
+<body>
+    <p>list in object in javascript</p>
+</body>
+</html>
