@@ -275,3 +275,57 @@ hr{
     margin-top: 20px;
     margin-bottom: 0px;
 }
+
+.position4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.l1{
+    padding: 0px;
+    margin: 0px; 
+}
+.lcenter{
+    margin-top: 130px;
+}
+
+.lcenter h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+.l1center{
+    text-align: center;
+    width: 630px;
+    padding-left: 440px;
+}
+.l1center p{
+    margin-top: 10px;
+}
+
+.l2center{
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+.l2center a{
+    color: #005da6;
+    font-weight: 600;
+    font-size: 16px;
+}
+.r1{
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    min-height: 213px;
+    height: auto;
+}
+.r1 img{
+    max-width: 80%;
+    min-height: 213px;
+    height: auto;
+    align-items: center;
+    /* min-width: 310px; */
+}
