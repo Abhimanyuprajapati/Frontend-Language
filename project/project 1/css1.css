@@ -316,7 +316,7 @@ hr{
     font-size: 16px;
 }
 .r1{
-    padding: 0px;
+    /* padding: 0px; */
     margin: 0px;
     max-width: 100%;
     min-height: 213px;
@@ -328,4 +328,122 @@ hr{
     height: auto;
     align-items: center;
     /* min-width: 310px; */
+    padding-left: 130px;
+    margin-top: 10px;
+}
+
+.position5{
+    /* padding-left: 40%; */
+    margin-top: 160px;
+    padding-left: 60px;
+    margin-bottom: 110px;
+}
+.s1{
+    margin: 0px;
+    padding-left:520px;
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    /* text-align: center; */
+    width: 400px;
+    margin-bottom: 25px;
+}
+
+.heading-img{
+    align-items: center;
+    padding-left: 130px;
+    margin-top: 0px;
+}
+
+.main-contain{
+/* padding-inline-start: 20px  ; */
+/* margin: 0px; */
+margin-top: 32px;
+padding-left: 415px;
+}
+
+.main-contain p{
+    /* text-align:left; */
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.main-contain #b1{
+    margin: 0px;
+    height: 30px;
+    width: 600px;
+    padding: 7px 10px;
+    border: 2px solid rgba(0,0,0,.6);
+}
+
+.main-contain #b2{
+    /* margin: 0px; */
+    margin-top: 14px;
+    height: 50px;
+    width: 623px;
+    /* padding: 7px 10px; */
+    /* padding-top: 10px; */
+    background: #7719aa !important;
+    color: #fff !important;
+    font-size: 15px;
+    cursor: pointer;
+}
+.main-contain .e1{
+    /* text-align: center; */
+    padding-left: 195px;
+}
+.e1 p{
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.position6{
+    /* padding: 0px; */
+    margin: -15px;
+    padding-left: 45px;
+    /* align-items: center; */
+    background-color: #2f2f2f;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+.get1{
+    text-align: center;
+
+}
+.get1 #b3 {
+    color: #fff;
+    font-size: 37px;
+    line-height: 30px
+    padding: 38px 0px 2px;
+    font-weight: 600;
+    margin-bottom:10px;
+
+}
+.get1 #b4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px ;
+}
+.get1 input{
+    background: #7719aa !important;
+    color: #fff !important;
+    min-width: 230px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    white-space: normal;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
 }
