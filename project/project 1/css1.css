@@ -5,13 +5,33 @@ body{
 .navbar{
     background-color: aliceblue;
 }
+#n1{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav1 img{
+    height: 25px;
+    width: 110px;
+}
 .navbar ul{
     overflow:auto;
+}
+#n2 a{
+    border:solid 2px #000;
+    text-align: center !important;
+}
+#n4 a{
+    margin-left: 450px !important;
+}
+#n3 a{
+    padding-right: 5px;
 }
 .navbar li{
     float: left;
     list-style: none;
     margin: 5px 5px;
+    padding-right: 20px;
 }
 .navbar li a{
     text-decoration: none;
