@@ -1,0 +1,13 @@
+.made1{
+    display: inline-flex;
+   
+    /* padding: 90px 180px; */
+}
+.made1 div{
+    padding: 50px 65px;
+}
+
+.v1{
+    color: red;
+    border: 2px solid black;
+}
