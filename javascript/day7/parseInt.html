@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parseInt in js</title>
+</head>
+<body>
+    <script>
+        var a="45";
+        console.log(typeof a, a);
+        a=parseInt(a);
+        console.log(typeof a, a);
+        var a="45.12";
+        console.log(typeof a, a);
+        a=parseInt(a);
+        console.log(typeof a, a);
+    </script>   
+
+    <script>
+        var a=true;
+        console.log(typeof a, a);
+        a=parseInt(a);
+        console.log(typeof a, a);
+    </script>
+
+    <script>
+        var a="452,523";
+        console.log(typeof a, a);
+        a=parseInt(a);
+        console.log(typeof a, a);
+    </script>
+
+    <script>
+        var input = "     45";
+console.log(typeof input,input);
+input = parseInt(input);
+console.log(typeof input,input);
+    </script>
+    <script>
+         var input = "45.     ";
+console.log(typeof input,input);
+input = parseInt(input);
+console.log(typeof input,input);
+    </script>
+
+    <script>
+        var input = "45     567";
+console.log(typeof input,input);
+input = parseInt(input);
+console.log(typeof input,input);
+    </script>
+</body>
+</html>
