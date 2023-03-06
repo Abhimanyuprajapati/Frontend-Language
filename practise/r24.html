@@ -1,0 +1,101 @@
+<!-- 
+    HTML Forms and CSS
+Create an HTML form having class as "form-container"that includes the following :
+
+
+A text input field with an ID of "name" for users to enter their name.
+
+An email input field with an ID of "email" for users to enter their email address.
+
+A number input field with an ID of "number_of_guests" for users to enter the number of guests
+
+A tel input field with an ID of "phone" for users to enter their number
+
+A dropdown selection field with an ID of "attend_ceremony" that allows users to choose if they would come or not. It should have two options: "yes" and "no".
+
+An input field with a type of "submit" having ID "submit" for users to submit the form
+
+Labels for each of the input tags have to be created.
+
+The labels should have a display property set to block, margin top of 10px and font weight set to value 700
+
+The element with class form-container should have a background color of rgb(242, 242, 242) and a padding of 20px
+
+The inputs and the select tag should have
+
+A width of 300px
+
+A padding of 12px
+
+Border having width of 1px, style as solid and the color should be rgb(204, 204, 204)
+Border radius of 4px
+
+Box sizing property set to border-box
+
+The input having id submit should have
+
+A background color having value rgb(76, 175, 80)
+
+A text color having value rgb(255, 255, 255)
+
+A padding of 12px 20px
+
+A border of 0px width having style as none and color as rgb(255, 255, 255)
+
+A display property set to block
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Forms and CSS</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .form-container{
+            background-color: rgb(242, 242, 242);
+            padding: 20px;
+        }
+        input,select{
+            width: 300px;
+            padding: 12px;
+            border-width: 1px solid rgb(204, 204, 204);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        #submit{
+            background-color: rgb(76, 175, 80);
+            color: rgb(255, 255, 255);
+            padding: 12px 20px;
+            border-color: rgb(255, 255, 255);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" class="form-container">
+        <label for="name">name</label>
+       <input type="text" name="name" id="name">
+       <label for="email">email</label>
+       <input type="email" name="email" id="email">
+       <label for="number">number</label>
+       <input type="number" name="number" id="number_of_guests">
+       <label for="phone">phone</label>
+       <input type="tel" name="number" id="phone">
+       <label for="attend_ceremony">dropdown</label>
+       <select name="dropdrop" id="attend_ceremony">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+       </select>
+       <label for="submit">submit</label>
+       <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+</html>
