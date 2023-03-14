@@ -1,0 +1,30 @@
+.fa-meetup{
+    font-size: 35px;
+    color: rgb(95, 232, 74);
+}
+
+.bg-light {
+    background-color:rgb(138, 111, 116)!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .9);
+    font-size: 20px;
+}
+
+.mr-auto{
+    margin-left: 55px;
+}
+
+.my-lg-0{
+    margin-right: 50px;
+    
+}
+
+.form-inline .form-control {
+    width: 550px;
+}
+
+.btn-outline-success{
+    background-color: #ebe5e5;
+    color: black;
+}

@@ -1,0 +1,13 @@
+.bg-light{
+    background-color:rgb(95, 232, 74) !important;
+}
+.nav-link{
+    /* text-align: center!important; */
+    color: black !important;
+    margin-left:150%
+}
+
+#new{
+    background-color: rgb(205, 229, 221);
+    margin-top: 80px;
+}
