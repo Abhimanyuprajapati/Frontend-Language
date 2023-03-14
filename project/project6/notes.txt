@@ -1,0 +1,44 @@
+//https://spiky-theory-17e.notion.site/Stock-Market-Dashboard-78555c69d39d41bda893fc92b5991754
+
+## Project Objective
+
+- You will be building a stock market dashboard using HTML, CSS and JavaScript.
+- In the end, we’ll have a web application that takes the input from stock symbol and fetch their data to show stock price related to the company.
+
+
+## Project Context
+
+- The stock market is a very tedious task to understand, and more difficult is to operate its application and track your stock.
+- We will create a dashboard where you can add stocks based on their symbols and on the type of data you want.
+
+- We will use the [**alphavantage.co**](http://alphavantage.co) API for this.
+
+
+## Project Steps
+
+- Create API key
+    
+    create an account at [https://www.alphavantage.co](https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo) and get the API key that you would use in the project 
+    
+- Creating Input Field
+    
+    The website has an **input field** of type text which takes the symbol 
+    
+    The user then selects the time options among giving four options which are INTRADAY , WEEKLY , DAILY , MONTHLY
+    
+- Watchlist
+    
+    When the user click enter after selecting the time frame and symbol the stock is added with that particular timeframe to the Watchlist
+    
+- Modal
+    - when The card of any stock is clicked then it adds a modal to the screen which shows the data related to that particular timeframe
+- Delete card
+
+
+
+## Project Checkpoints
+
+- The  input field and the timeframe buttons
+- Watchlist section containing cards of stock
+- The modal that appears when the stock card is clicked
+- the delete button
