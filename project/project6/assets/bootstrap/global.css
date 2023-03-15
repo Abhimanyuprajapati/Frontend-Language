@@ -1,15 +1,25 @@
-.fa-meetup{
-    font-size: 35px;
+.fa-meetup {
+    font-size: 50px;
     color: rgb(205, 221, 229);
+    padding-top: 18px;
 }
 
+.navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.navbar-expand-lg {
+    height: 55px;
+}
 .bg-light {
-    /* background-color:rgb(138, 111, 116)!important; */
     background-color: #00d09c !important;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, .9);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .mr-auto{
@@ -22,7 +32,7 @@
 }
 
 .form-inline .form-control {
-    width: 550px;
+    width: 500px;
 }
 
 .btn-outline-success{
