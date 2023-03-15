@@ -1,10 +1,11 @@
 .fa-meetup{
     font-size: 35px;
-    color: rgb(95, 232, 74);
+    color: rgb(205, 221, 229);
 }
 
 .bg-light {
-    background-color:rgb(138, 111, 116)!important;
+    /* background-color:rgb(138, 111, 116)!important; */
+    background-color: #00d09c !important;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, .9);
