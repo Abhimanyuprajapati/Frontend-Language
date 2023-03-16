@@ -95,3 +95,62 @@ svg{
     padding-left: 20px;
 }
 
+/* this is all the zero css style */
+
+.our-product{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.our-product span{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.zero{
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+
+.zero-left img{
+    height: 500px;
+    width: 700px;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.zero-right{
+    margin-top: 200px;
+    margin-left: 30px;
+    font-family: Roboto,system-ui;
+}
+
+.zero-right span{
+    display: inline-flex;
+}
+
+.zero-right h1{
+    font-size: 80px;
+    font-family: Roboto,system-ui;
+}
+.zero-right #z1{
+    font-size: 40px;
+   margin-top: 30px;
+   margin-left: 10px;
+}
+.zero-right #z2{
+    font-weight: 600;
+}
+.zero-right button{
+    font-size: 26px;
+    background-color: #00d09c ;
+    color: white;
+    border-radius: 3px;
+    border-color: #00d09c;
+}
