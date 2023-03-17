@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator in js</title>
+</head>
+<body>
+    <script>
+        // introduce by (ES6-ES2015)
+        // spread operator     (" ... ")
+        // *   copying the array
+        // *   using the object
+        // *   using the function call  not function defination
+        // case 1  in array
+
+        const originalArray=[1,2,3,4];
+        const copyArray=originalArray.slice()  // this will create the brand new arrays
+        console.log("originalArrays",originalArray);
+        console.log("copyArray",copyArray);
+
+        console.log(originalArray===copyArray);  // why false because is will create the hole new 
+        // arrays it will refer to that reference 
+    </script>
+
+    <script>
+        // eg of spread operator
+         const originalArray1=[1,2,3,4];
+        const copyArray1=originalArray1  // it will point to that address
+        console.log("originalArrays",originalArray1);
+        console.log("copyArray",copyArray1);
+
+        console.log(originalArray1===copyArray1);  // why true because they both are point to that same reference  or address 
+    </script>
+
+    <script>
+        // what if we want to access the the number 2 and 3
+         const originalArray2=[1,2,3,4];
+        const copyArray2=originalArray2.slice(1 ,3)
+        console.log("originalArrays",originalArray2);
+        console.log("copyArray",copyArray2);
+    </script>
+
+    <script>
+        // (" ... ")   = spread operator
+         const originalArray3=[1,2,3,4];
+        const copyArray3=[...originalArray3]
+        console.log("originalArrays",originalArray3);
+        console.log("copyArray",copyArray3);
+        console.log(originalArray3===copyArray3);
+    </script>
+
+    <script>
+        // add two arrays by using spread
+        const first=[1,2,3,4];
+        const second = [5,6,7,8];
+        const third = [...first,...second];
+        console.log(third);
+    </script>
+
+    <script>
+         const firs=[1,2,3,55];
+       
+        const thir = [1,2,3, ...firs ,5,6,7];  // we can also do that
+        console.log(thir);
+    </script>
+    <!--case 2  object -->
+    <script>
+        // in object spread operator
+        const object={
+            Id:20,
+            address: "jay ho",
+            roll:"name",
+        }
+        // how to copy that
+        const res={
+            ...object,   // here also we can do that
+            Id:50,
+            // in object if we use same object it will replace it
+        }
+        console.log(res);
+    </script>
+
+    <!--  case 3 spreading within the function call -->
+    <script>
+        // case 3
+        console.log(Math.pow(2,3));
+        // this is nothing but 2 power of 3
+        const answer=Math.max(10,20,50,500,4000);  // here we have pass all the elements indivisible
+        console.log(answer);
+
+        // if we wants to pass the array it will not work and throught NaN
+        // so by using spread we can use
+        const arr1=[51,12,23,25];
+        const answer1=Math.max(...arr1);  // it will work
+        console.log(answer);
+
+        function sum(a,b,c,d){
+            return a+b+c+d;
+        }
+        const arr2=[1,2,3,4];
+        const result=sum(arr2[0],arr2[1],arr2[2],arr2[3]); // we can do this by spreading
+        console.log(result);
+        // like 
+        const r1=sum(...arr2);  // we can use this also like 
+        console.log(r1);
+    </script>
+</body>
+</html>

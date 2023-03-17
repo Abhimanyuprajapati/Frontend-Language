@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple function</title>
+</head>
+<body>
+    <script>
+        function multiply(a,b){
+            return a*b;
+
+        }
+        const result=multiply(10,20);
+        console.log(result);
+
+        // simply return 200
+    </script>
+
+    <!-- if what user will will give 1 value  -->
+    <script>
+         function multiply(a,b){
+            console.log(b);
+            return a*b;
+
+        }
+        const result1=multiply(10);
+        console.log(result1);
+    </script>
+    <!-- if not then write -->
+    <script>
+          function multiply(a,b){
+        //   if(b===undefined)    or   if (!b)
+                                     //  ! + undefine ==   true
+        //   {
+        //     b=1;
+        //   }
+        // one more way to do that is 
+
+        // b=typeof b !== "undefined" ? b  :1;
+
+        // if(b==="undefined")
+        // {
+        //     b=1;
+        // }
+
+        b=typeof b !== "undefined" ? b  : 1;
+            return a*b;
+
+        }
+        const result2=multiply(10);
+        console.log(result2);
+    </script>
+
+    <script>
+        const valueofundefine=typeof undefined ;   // means that value of undefine is string
+        console.log(valueofundefine==="undefined");  //it will give true
+    </script>
+</body>
+</html>
