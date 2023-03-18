@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function destructuring in js</title>
+</head>
+<body>
+    <script>
+        // function fullname(item){
+        //         console.log(item);
+        //        const{location}=item;  // here destructuring the location
+        //        console.log(location);
+        // }
+        // const username={
+        //     name:"akash",
+        //     no:52,
+        //     location:{
+        //         city:"mumbai",
+        //     },
+        // };
+        // fullname(username);
+
+// --------------------------------------------------------------------------
+          
+        // function fullname(item){
+        //         console.log(item);
+        //        const{location:{city}}=item;  // destructuring the location
+        //        console.log(city);
+        // }
+        // const username={
+        //     name:"akash",
+        //     no:52,
+        //     location:{
+        //         city:"mumbai",
+        //     },
+        // };
+        // fullname(username);
+
+// ----------------------------------------------------------------------------------
+
+            // const parent =  {
+            //     city:"mumbai",
+            //     contenent:"asia",
+            //     score:100,
+            // };
+            // const {city, ...rest}=parent   // i have created the rest operator
+            // console.log(rest);               // call the rest
+            // console.log(city,rest);
+
+// -------------------------------------------------------------------------------------
+
+                const number=[1,1,3,5,5];
+                const {a, ...rest}=number;
+                console.log(rest);
+                console.log(a,rest);
+                
+       </script>
+</body>
+</html>
