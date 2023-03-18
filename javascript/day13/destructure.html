@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructuring in js</title>
+</head>
+<body>
+    <!-- <script>
+        const object = {
+            id:52,  // pull the value
+            roll:50,
+            name:"akash",
+            city:"dehli",
+            state:"dehli",
+        }
+
+        //destructuring means taking out the and creating variable 
+        const id=object.id;
+        console.log(id);
+
+        // if you want to resign some thing than us " let " or " const "
+
+    </script> -->
+
+    <script>
+        // destructuring { }
+        const object1 = {
+            id1:52,  // pull the value
+            roll:50,
+            name:"akash",
+            city:"dehli",
+            state:"dehli",
+        }
+        const { id1 }=object1;
+        console.log(id1);
+
+        const {roll:rollno, nameing , name, bm, ds}=object1;  // here roll id destructed and then we have assign the variable to the name rollno
+        console.log(rollno ,nameing, name, bm, ds);  // except rollno and name every is undefined
+        // const {roll:}=object1; 
+    </script>
+</body>
+</html>
