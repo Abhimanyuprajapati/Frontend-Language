@@ -1,16 +1,31 @@
-<!-- input of type text with id #text, this will be a required field
+<!-- 
+   Dominos Feedback
+Hey, It's Dominos!!
 
-input of type textarea with id #message, this will be a required field
+We serve a lot of delicious pizza, but we were never able to collect feedback from the customers :(
+Can you please make us a feedback form, it would be a great help for us ;)
 
-input of type email with id #email, this will be a required field
+For the test cases to get passed
+The feedback form should contain the following input fields:
 
-input of type number with id #rate and range 0-5
+Input of type text with id #text, this will be a required field.
 
-a html button with id #submit
+Input of type textarea with id #message, this will be a required field.
+
+Input of type email with id #email, this will be a required field.
+
+Input of type number with id #rate and range 0-5.
+
+A button with id #submit.
 
 
 
-Note: Every input must have a label with id #{inputid}-label -->
+Note: Every input must have a label with id #{inputid}-label. For example,
+
+for the input field of id rate the label should have the id as rate-label,
+
+for the input field of id text, the label should have the id as text-label.
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,18 +33,25 @@ Note: Every input must have a label with id #{inputid}-label -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Dominos Feedback</title>
 </head>
 <body>
-    <label for="#text">text</label>
-    <input type="text" id="#text" required>
-    <label for="#message">message</label>
-    <input type="textarea" id="#message" required>
-    <label for="#email">email</label>
-    <input type="email" id="#email" required>
-    <label for="#rate">rate</label>
-    <input type="number" id="#rate" min="0" max="5">
-    <label for="#submit">submit</label>
-    <input type="button" value="button" id="#submit">
+    <form action="get">
+        <h1> Feedback Form</h1>
+        <label for="text" id="text-label">Enter your name</label>
+        <input type="text" id="text" required>
+    
+        <label for="email" id="email-label">Your email address</label>
+        <input type="email" id="email" required>
+    
+        <label for="message" id="message-label">Message</label>
+        <input type="textarea" id="message"  required>
+    
+        <label for="rate" id="rate-label">How did you like our pizza</label>
+        <input type="number" id="rate" min="0" max="5">
+    
+        <!-- <label for="submit">submit</label> -->
+        <button id="submit" >Submit</button>
+    </form>
 </body>
 </html>

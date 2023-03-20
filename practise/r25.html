@@ -1,0 +1,75 @@
+<!-- Q1.
+Converter
+
+Design a converter in Javascript which converts the given number with any base to its corresponding representation in another base. The converter should have options to choose from 4 bases: Decimal, Hexadecimal, Octal, Binary.
+
+For Example: Users may input a number like 34 in Decimal and may want to convert it to binary.
+
+To achieve this purpose user should be provided with the following components in
+the UI.
+
+Two divs with class input and output respectively. The input div will have UI to enter the number and base which needs to the converted. The output div will have the UI to enter the base to which the number will be converted and also a textarea where the output will be displayed
+
+Both the divs should have a dropdown to choose from the 4 bases.The value of the 4 options should be: Decimal, Hexadecimal, Octal, Binary
+
+Both the divs should have a textarea. The textarea of input div will be used for input and the one in the output div will be used for output
+
+There should be two buttons. The first one will be the Swap button and the second one will be the Submit button. Maintain the order.
+
+
+Functionality:
+
+With on click of the submit button, the application performs the required operations
+and ultimately shows the result in the textarea of the output div.
+
+With one click of the swap button, the values of the dropdown in the outer and inner divs are swaped.
+
+
+-->
+
+<!-- -------------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Converter</title>
+<script src="./js/r1.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align:center">Converter</h1>
+    <div class="container row align-items-center" style="justify-content:center">
+        <div class="input col-md-4">
+            <h3 class="label">From</h3>
+            <select class="form-select col select" id="inputFormat" area-label="Default select example">
+                <option value="4" selected>Hexadecimal</option>
+                <option value="3">Decimal</option>
+                <option value="2">Octal</option>
+                <option value="1">Binary</option>
+            </select>
+            <div class="mb-3">
+                <textarea class="form-control" id="input" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="col buttons">
+            <button type="button" onclick="swap()" class="btn btn-primary swap">Swap</button>
+            <button type="button" onclick="submit()" class="btn btn-primary submit">Submit</button>
+        </div>
+        <div class="output col-md-4">
+            <h3 class="label">To</h3>
+            <select class="form-select col select" id="outputFormat" area-label="Default select example">
+                <option value="4">Hexadecimal</option>
+                <option value="3">Decimal</option>
+                <option value="2">Octal</option>
+                <option value="1">Binary</option>
+            </select>
+            <div class="mb-3">
+                <textarea class="form-control" id="output" rows="2" readonly></textarea>
+            </div>
+        </div>
+    </div>
+</div> 
+</body>
+</html>
