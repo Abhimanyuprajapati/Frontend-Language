@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(250, 243, 243);
+    font-family: 'Roboto', sans-serif;
+}
+
+.row button{
+    background-color: rgb(226, 238, 238);
+}
