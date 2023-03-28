@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter in js</title>
+</head>
+<body>
+    <script>
+         var list=[
+            {
+                name:"aksah",
+                age:50,
+                location:"delhi"
+            },
+            {
+                name:"priti",
+                age:20,
+                location:"mumbai"
+            },
+            {
+                name:"ruchi",
+                age:25,
+                location:"pune"
+            },
+            {
+                name:"varsha",
+                age:12,
+                location:"satara"
+            }
+        ];
+
+        // filter means condition 
+        var result=list.filter((input)=>{
+            return input.age>=20;   // this will return the value 
+            // console.log(input.age>=20);   this will return boolean value
+        });
+        console.log(result);
+// -------------------------------------------------------------------------------
+        //  another method
+
+        const s1=(input)=>{
+            return input.age>=20;
+        };
+        var result1=list.filter(s1);
+        console.log(result1);
+
+    </script>
+</body>
+</html>
