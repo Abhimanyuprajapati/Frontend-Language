@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create Element in js </title>
+</head>     
+<!-- https://andreasbm.github.io/web-skills/ -->
+<body>
+    <script>
+        // run this elements when the document is loaded
+        window.onload = ()=>{
+            const head=document.createElement("h1");
+            const headText=document.createTextNode("this is the heading elements");
+            head.appendChild(headText);
+            document.body.appendChild(head);
+        };
+// // run this elements in when the doucment is loaded
+//         window.onload = ()=>{
+//             const he= document.createElement("h6");
+//             const hea=document.createTextNode("this is the smallest heading tag");
+//             he.appendChild(hea);
+//             document.body.appendChild(he);
+//         }
+    </script>
+</body>
+</html>

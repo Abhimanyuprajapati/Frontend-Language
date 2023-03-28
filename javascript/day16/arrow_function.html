@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrow function </title>
+</head>
+<body>
+    <script>
+       function add(a,b){
+        return a+b;
+        };
+        add(10,20);
+        console.log(add(50,10));
+    </script>
+    <!-- 
+    //arrow function is a new syntax
+    //we need to declare in variable
+    //always use const variable because function should be unique throughout the page.
+    //()=>{}
+     -->
+     <script>
+// Traditional anonymous function
+(function (a, b) {
+  return a + b + 100;
+});
+
+// Arrow function
+(a, b) => a + b + 100;
+
+const a = 4;
+const b = 2;
+
+// Traditional anonymous function (no parameters)
+(function () {
+  return a + b + 100;
+});
+
+// Arrow function (no parameters)
+() => a + b + 100;
+
+     </script>
+</body>
+</html>

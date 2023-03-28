@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> map function </title>
+</head>
+<body>
+    <!-- 
+         //map function is array method
+    //it will return new array
+    //it will help to manipulate or do changes in your code.
+ -->
+   <script>
+     let list=[
+    {
+        name:"akash",
+        age:52,
+        state:"mumbai",
+    },
+    {
+        name:"priti",
+        age:51,
+        state:"pune",
+    },
+    {
+        name:"ankush",
+        age:50,
+        state:"bangal",
+    }
+    ];
+    // var result=list.map(function(input){
+    //     return input;
+    // });
+    // console.log(result);
+    var result=list.map(function(input){
+        return input.name;
+    })
+    console.log(result);
+    var result=list.map(function(input){
+        return {name:input.name,criteria:input.age,location:input.state};
+    });
+    console.log(result);
+   </script>
+</body>
+</html>
