@@ -4,8 +4,8 @@ const quotertext=document.getElementById('quoter');
 const authortext=document.getElementById('author');
 const tweeter=document.getElementById('twitter');
 const newbutton=document.getElementById('new-button');
-// const loader=document.getElementsByClassName('loader');
-/*
+const loader=document.querySelector('span.loader');
+
 function loading(){
     loader.classList.remove('hide');
     quotescontainer.classList.add('hide');
@@ -16,7 +16,7 @@ function complete(){
     quotescontainer.classList.remove('hide');
 }
 
-*/
+
 
 let apiQuotes=[];
 
@@ -47,14 +47,14 @@ function newQuotes(){
 }
 // get the api quotes from website
 async function getQuotes(){
-    // loader();
+    loading();
     const apiurl="https://type.fit/api/quotes";
     try{
         const responsess= await fetch(apiurl);
         apiQuotes=await responsess.json();
        newQuotes();
 
-    //    complete();
+       complete();
     }catch(error){
 // catch the error
     }
