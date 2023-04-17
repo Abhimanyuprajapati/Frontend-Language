@@ -1,73 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="c1.css">
-    <title>Car Racing Game</title>
+    <title>Running Game</title>
+    <link rel="stylesheet" href="./css1.css">
 </head>
 <body>
-    <div class="carGame">
-        <div class="score"></div>
-        <div class="startScreen">
-            <p>
-                Press here to start <br>
-                Arrow keys to move <br>
-                If you hit another car you will loose.
-            </p>
+    <div id="game">
+        <div id="character">
+
         </div>
-        <div class="gameArea">
-            <div class="car" style="top: 492px; left: 0px;"></div>
-            <div class="lines" style="top: 140px;"></div>
-            <div class="lines" style="top: 290px;"></div>
-            <div class="lines" style="top: 440px;"></div>
-            <div class="lines" style="top: 590px;"></div>
-            <div class="lines" style="top: -10px;"></div>
-            <div class="lines" style="top: 140px;"></div>
-            <div class="lines" style="top: 290px;"></div>
-            <div class="enemyCar" style="top: 64px; background-color: rgb(244, 63, 200); left: 43px;"></div>
-            <div class="enemyCar" style="top: -288px; background-color: rgb(70, 54, 124); left: 183px;"></div>
-            <div class="enemyCar" style="top: 416px; background-color: rgb(102, 140, 228); left: 12px;"></div>
+        <div id="block">
+            
         </div>
     </div>
-    <script src="j1.js"></script>
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
+    <script src="./js1.js"></script>
 </body>
 </html>

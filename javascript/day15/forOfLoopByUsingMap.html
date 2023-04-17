@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for fo loop (map)</title>
+</head>
+<body>
+    <script>
+        const array=[10,20,23,50,47];
+        const transform=[];
+        for(const num of array)
+        {
+            const object={
+                value:num,
+                isEven:num%2===0?true:false
+            };
+            transform.push(object);
+        }
+        console.log(transform);
+    </script>
+    <!-- the same things we can write that by using map  -->
+    <script>
+        console.log("using map ");
+        const array1=[10,20,23,50,47];
+        const copymap=array1.map(function(elements){
+            return {
+                value:elements,
+                isEvean:elements%2===0
+            };
+        });
+        console.log(copymap);
+    </script>
+</body>
+</html>
