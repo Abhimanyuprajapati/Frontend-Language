@@ -1,3 +1,3 @@
 function onSubmitHandler(){
-    alert("successful");
+    alert("Login Successful");
 }

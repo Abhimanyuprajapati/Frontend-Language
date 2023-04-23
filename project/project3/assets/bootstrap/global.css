@@ -1,13 +1,41 @@
-.bg-light {
-    background-color: #96b6d6 !important;
+.fa-meetup {
+    font-size: 50px;
+    color: rgb(205, 221, 229);
+    padding-top: 18px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color:black;
+.navbar-expand-lg .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-top: 30px;
 }
-/* @media (min-width: 1200px) */
-.container {
-    max-width: 1140px;
-    /* background-color: aquamarine; */
-    padding-top: 100px;
+.navbar-expand-lg {
+    height: 55px;
+}
+.bg-light {
+    background-color: #00d09c !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .9);
+    font-size: 18px;
+}
+
+.mr-auto{
+    margin-left: 55px;
+}
+
+.my-lg-0{
+    margin-right: 50px;
+    
+}
+
+.form-inline .form-control {
+    width: 500px;
+}
+
+.btn-outline-success{
+    background-color: #ebe5e5;
+    color: black;
 }

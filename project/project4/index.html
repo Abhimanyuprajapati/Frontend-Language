@@ -1,172 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoneyMaker - Online Demat, Trading and Direct Mutual Fund Investment in ... moneymake.in</title>
-  <link rel="stylesheet" href="./assets/css/min.css">
-  <link rel="stylesheet" href="./fontosm/font-awesome-4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="./fontosm/font-awesome-4.7.0/css/font-awesome.min.css">
-  <!-- global link -->
-  <link rel="stylesheet" href="./assets/bootstrap/global.css">
-  <!-- container css -->
-  <link rel="stylesheet" href="./assets/css/container.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="./util.css">
+    <link rel="stylesheet" href="./sytle.css">
+    <script defer src="./cal.js"></script>
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><i class="fa fa-meetup" aria-hidden="true">Money</i></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./register.html">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./login.html">Login</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+    <div class="container">
+        <div class="h1">
+            <h1>Calculator</h1>
+        </div>
+        <div class="answer content">
+            <input type="text" id="a1">
+        </div>
+        <div class="content">
+            <div class="row">
+                <button class="button1">C</button>
+                <button class="button1">D</button>
+                <button class="button1">%</button>
+                <button class="button1">/</button>
+            </div>
+            <div class="row">
+                <button class="button1">9</button>
+                <button class="button1">8</button>
+                <button class="button1">7</button>
+                <button class="button1">*</button>
+            </div>
+            <div class="row">
+                <button class="button1">6</button>
+                <button class="button1">5</button>
+                <button class="button1">4</button>
+                <button class="button1">-</button>
+            </div>
+            <div class="row">
+                <button class="button1">3</button>
+                <button class="button1">2</button>
+                <button class="button1">1</button>
+                <button class="button1">+</button>
+            </div>
+            <div class="row">
+                <button class="button1">0</button>
+                <button class="button1">.</button>
+                <button class="button1">=</button>
+                <button class="button1">MD</button>
+            </div>
+        </div>
     </div>
-  </nav>
-
-  <div class="marq">
-    <marquee behavior="alternate">
-      Jab jeb mein money ho na toh kundli mein shani hone se koi fark nahi padta ...
-    </marquee>
-  </div>
-  <div class="container">
-    <div class="container-left">
-      <div class="left-down">
-        <h1>Invest in India</h1>
-        <p>Trusted by<strong> Millions</strong> of Indians. Start investing today.</p>
-        <a href="./register.html"><button>Get Started</button></a>
-      </div>
-    </div>
-    <div class="container-rigth">
-      <div class="right">
-        <a href="./register.html">
-          <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20.1997" y="29" width="20.8" height="6.4" fill="#00D09C" />
-            <rect x="20.7891" y="21" width="20.2105" height="6.4" fill="#00D09C" />
-            <path
-              d="M20.7891 14C20.7891 13.4477 21.2368 13 21.7891 13H39.9996C40.5519 13 40.9996 13.4477 40.9996 14V19.4H20.7891V14Z"
-              fill="#00D09C" />
-            <path
-              d="M17.4211 35.0628C22.0719 35.0628 25.8421 31.2926 25.8421 26.6418C25.8421 21.9909 22.0719 18.2207 17.4211 18.2207C12.7702 18.2207 9 21.9909 9 26.6418C9 31.2926 12.7702 35.0628 17.4211 35.0628Z"
-              fill="#E6FBF6" />
-            <path
-              d="M17.4214 33.379C21.1421 33.379 24.1583 30.3628 24.1583 26.6421C24.1583 22.9215 21.1421 19.9053 17.4214 19.9053C13.7008 19.9053 10.6846 22.9215 10.6846 26.6421C10.6846 30.3628 13.7008 33.379 17.4214 33.379Z"
-              fill="#00D09C" />
-          </svg>
-          <p>Mutual Funds</p>
-        </a>
-      </div>
-      <div class="right">
-        <a href="./register.html">
-          <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12.25 34.485L21.25 25.4625L27.25 31.4625L40 17.1225L37.885 15L27.25 26.9625L21.25 20.9625L10 32.235L12.25 34.485Z"
-              fill="#5367FF" stroke="#5367FF" stroke-width="0.75" />
-          </svg>
-          <p>Stocks</p>
-        </a>
-      </div>
-      <div class="right">
-        <a href="./register.html">
-          <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="21.1558" y="8.97363" width="5.94795" height="15.6239" transform="rotate(-0.125251 21.1558 8.97363)"
-              fill="#FFB61B" />
-            <rect x="33.0708" y="17.875" width="5.94795" height="13.3919" transform="rotate(-0.125251 33.0708 17.875)"
-              fill="#FFB61B" />
-            <rect x="9.0293" y="22.3916" width="5.9493" height="17.8559" transform="rotate(-0.125251 9.0293 22.3916)"
-              fill="#FFB61B" />
-          </svg>
-          <p>Futures & Options</p>
-        </a>
-      </div>
-      <div class="right">
-        <a href="./register.html">
-          <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M27.0504 8.08417L22.4188 8.0943L22.4274 12.0074L15.9763 12.0215L16.0087 26.8124L28.9107 26.7676L28.9207 31.3565L16.0187 31.3847L16.0298 36.4827L22.4808 36.4686L22.4894 40.3817L27.1209 40.3716L27.1124 36.4585L33.5634 36.4444L33.5311 21.6535L20.6291 21.6983L20.619 17.1094L33.5211 17.0812L33.5099 11.9832L27.0589 11.9973L27.0504 8.08417Z"
-              fill="#FF585D" />
-          </svg>
-          <p>US Stocks</p>
-        </a>
-      </div>
-      <div class="right">
-        <a href="./register.html">
-          <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.1665 22.5784V23.4803C11.1725 25.7079 12.8994 27.5518 15.1218 27.7035V34.0384C15.1218 34.4779 15.4781 34.8342 15.9176 34.8342H18.7348C19.1743 34.8342 19.5306 34.4779 19.5306 34.0384V27.7168H19.9922V18.334H15.4109C13.0668 18.334 11.1665 20.2343 11.1665 22.5784Z"
-              fill="#893168" />
-            <path
-              d="M35.6968 13.6382C35.4765 13.4881 35.1957 13.4582 34.9487 13.5587L21.8521 19.1295V26.9021L34.9487 32.4729C35.3534 32.6443 35.8205 32.4552 35.9919 32.0505C36.0334 31.9525 36.0549 31.8472 36.0549 31.7407V14.3014C36.0545 14.0343 35.92 13.7852 35.6968 13.6382Z"
-              fill="#893168" />
-          </svg>
-          <p>IPO</p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container2">
-    <div class="our-product">
-      <span>
-        OUR PRODUCTS
-      </span>
-      <h1>Your money. Your choice.</h1>
-    </div>
-    <div class="zero">
-      <div class="zero-left">
-        <img src="./img/img1/Screenshot 2023-03-16 004709.png" alt="reliance stock">
-      </div>
-      <div class="zero-right">
-        <span>
-          <h1>Zero</h1>
-          <p id="z1">account charges</p>
-        </span>
-       <p id="z2">You don’t have to pay a single rupee for opening a stocks account or account maintenance.</p>
-       <a href="./register.html"><button>Create Account For Free</button></a>
-      </div>
-    </div>
-    <div class="zero">
-      <div class="zero-left">
-        <img src="./img/img1/Screenshot 2023-03-16 004837.png" alt="TATA STEEL">
-      </div>
-      <div class="zero-right">
-        <span>
-          <h1>0%</h1>
-          <p id="z1">commission</p>
-        </span>
-       <p id="z2">Select from 5000+ direct mutual funds and get higher return than regular funds.</p>
-       <a href="./register.html"><button>Create Account For Free</button></a>
-      </div>
-    </div>
-    <div class="zero">
-      <div class="zero-left">
-        <img src="./img/img1/Screenshot 2023-03-16 005009.png " alt="HDFC BANK">
-      </div>
-      <div class="zero-right">
-        <span>
-          <h1>Free</h1>
-          <p id="z1">account opening</p>
-        </span>
-       <p id="z2">Invest in Apple, Google, Netflix and many more US companies that you love without any brokerage fee.</p>
-       <a href="./register.html"><button>Create Account For Free</button></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- this is all js file link -->
-  <script src="./assets/js/min.js"></script>
-  <script src="./assets/js/popper.js"></script>
-  <script src="./assets/js/slim.js"></script>
 </body>
-
 </html>
