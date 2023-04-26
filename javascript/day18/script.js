@@ -32,7 +32,7 @@ const makecolor=function(){
     return random;
 };
 
-const make=function(){
+const make=function(){        // we can also use arrow function ()=>{}
     const p=Math.floor(Math.random()*255);
     const q=Math.floor(Math.random()*255);
     const r= Math.floor(Math.random()*255);
@@ -53,4 +53,9 @@ button.addEventListener('click',function(){
     h1.style.color=makes;
     // body.style.backgroundColor=random;
 });
+
+
+// onclick
+// onmouseover
+
 

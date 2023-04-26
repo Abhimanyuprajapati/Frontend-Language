@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinite Scroll</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <!-- title -->
@@ -14,7 +14,11 @@
 
     <!-- loader -->
     <div class="loader" id="loader">
-        <img src="./Blocks-1s-110px.svg" alt="loader img">
+        <img src="./Blocks-1s-110px.svg" alt="loader img" hidden>
     </div>
+
+    <!-- this is for image -->
+        <div class="image-container" id="image-container">
+        </div>
 </body>
 </html>

@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   
+}
+
+.grandparent{
+    height: 500px;
+    width: 600px;
+    border: 5px solid rgb(113, 28, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.parent{
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgb(232, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.child{
+    height: 100px;
+    width: 150px;
+    border: 5px solid rgb(18, 232, 64);
+  
+}
