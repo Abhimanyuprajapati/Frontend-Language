@@ -39,3 +39,7 @@
     background-color: #ebe5e5;
     color: black;
 }
+
+.nav-link:hover{
+    color:rgb(252, 253, 253) !important;
+} 

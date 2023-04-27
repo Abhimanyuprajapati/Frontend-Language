@@ -154,3 +154,7 @@ svg{
     border-radius: 3px;
     border-color: #00d09c;
 }
+
+button{
+    cursor: pointer;
+}

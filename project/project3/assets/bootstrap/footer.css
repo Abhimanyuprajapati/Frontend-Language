@@ -1,0 +1,76 @@
+.container3{
+    box-sizing: border-box;
+    margin: 0px;
+    background-image: url('./../../img/img1/footer.jpg');
+}
+li{
+    list-style: none;
+}
+/* .footer{
+    /* background-image: url('./../../img/img1/footer.jpg'); 
+}
+ */
+
+.fa-meetup{
+    cursor: pointer;
+
+}
+
+.color{
+    color: white !important;
+    width: 230px;
+}
+.fa-instagram{
+    /* border-color: rgb(228, 64, 95) !important; */
+    cursor: pointer;
+    margin-left: 23px;
+    background-color: white;
+    color: rgb(228, 64, 95) !important;
+    font-size: 30px !important;
+    border-radius: 15px !important;
+   
+}
+.fa-facebook-official{
+    cursor: pointer;
+    margin-left: 23px;
+    background-color: white;
+    color:rgb(66 103 178);
+    font-size: 30px !important;
+    border-radius: 5px !important;
+}
+.fa-twitter{
+    cursor: pointer;
+    margin-left: 23px;
+    background-color: white;
+    color:rgb(29 161 242);
+    font-size: 30px !important;
+    border-radius: 15px !important;
+}
+.footer0{
+    margin: 0px 40px;
+    padding-top: 10px;
+}
+
+.footer1 >li{
+    margin: 0px 30px;
+    padding: 8px 3px;
+    align-items: center;
+}
+
+.footer{
+    height: 450px;
+}
+
+.size{
+    font-size: 30px !important;
+}
+
+.footer0{
+    display: flex;
+}
+.colors{
+    color: white;
+    margin: 33px 90px;
+    /* cursor: pointer; */
+
+}
