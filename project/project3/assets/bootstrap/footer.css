@@ -74,3 +74,43 @@ li{
     /* cursor: pointer; */
 
 }
+.widths{
+    width: 200px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.footer2 >li{
+    margin: 13px 0px !important;
+    cursor: pointer;
+}
+.footer3 > li{
+    margin: 13px 0px !important;
+    cursor: pointer;
+}
+.footer4 > li{
+    margin: 13px 0px !important;  
+    cursor: pointer;  
+}
+.fa-copyright{
+    color: azure;
+    font-size: 18px !important;
+    margin-left: 85px;
+    margin-top: 100px;
+
+}
+.para{
+    color: white;
+}
+.fa-heart{
+    color: red;
+}
+.photo-side{
+    cursor: pointer;
+    margin-left: 450px;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+.photo-sider{
+    cursor: pointer;
+    margin-top: -10px;
+}
