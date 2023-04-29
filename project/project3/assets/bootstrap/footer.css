@@ -114,3 +114,14 @@ li{
     cursor: pointer;
     margin-top: -10px;
 }
+.left-down button:hover{
+    /* color: #00d09c; */
+    color: white;
+    /* background-color: rgb(243, 239, 239); */
+    background-color: black;
+}
+.zero-right button:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
