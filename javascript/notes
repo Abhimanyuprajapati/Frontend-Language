@@ -1,0 +1,45 @@
+Function in javascript
+
+1. To avoid repeating the same code all over places, you can use a function to wrap that code and reuse it.
+
+Syntax:
+                function functionName(parameter) {
+                    <!-- all code -->
+                    <!-- function body -->
+                }
+
+
+Summary
+
+1. Use the function keyword to declare a function.
+
+2. Use the functionName() to call a function.
+
+3. All functions implicitly return undefined if they don’t explicitly return a value.  
+    <!-- implicitly: means automaitically done by computer       explicitly: means by us developer -->
+
+4. Use the return statement to return a value from a function explicitly.
+
+5. The arguments variable is an array-like object inside a function, representing function
+    arguments.
+
+6. The function hoisting allows you to call a function before declaring it.
+
+
+eg.
+    Returning a value
+    Every function in JavaScript implicitly returns undefined unless you explicitly specify a return value. For example:
+
+            function say(message) {
+                console.log(message);
+            }
+
+            let result = say('Hello');
+            console.log('Result:', result);
+
+            output:
+            Hello
+            Result: undefined
+
+
+--------------------------------------------------------

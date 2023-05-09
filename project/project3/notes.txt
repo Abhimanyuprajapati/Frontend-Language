@@ -42,3 +42,10 @@
 - Watchlist section containing cards of stock
 - The modal that appears when the stock card is clicked
 - the delete button
+
+------------------------------------------------------
+
+https://spiky-theory-17e.notion.site/Stock-Market-Dashboard-78555c69d39d41bda893fc92b5991754
+
+
+Access key: Welcome to Alpha Vantage! Your dedicated access key is: 8H0BQOMU0ZET8BNJ. Please record this API key at a safe place for future data access.

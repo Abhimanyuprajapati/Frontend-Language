@@ -1,0 +1,112 @@
+<!-- 
+    Highlight Calendar
+In this question, you will create a calendar with a highlight dates feature, and a clear button using HTML, CSS, and JavaScript. This question is divided into HTML, CSS, and JavaScript.
+
+HTML:
+
+
+Create a div with the class "calendar".
+
+Within the div with class="calendar", create 38 divs with every div having class="calendar-day". The first 7 divs should contain the text Sun, Mon, Tues, Wed, Thurs, Fri, and Sat. The rest of the divs should contain numbers from 1-31.
+
+Below the div with class="calendar", create a div with class="input-wrapper", and add 2 label tags, 2 input fields, and 2 buttons.
+The first label should contain the text "Date: ", and the input field associated with the first label should have the id="input-date" and of type="number". Make sure the for attribute of the label matches the input field's id.
+
+The second label should contain the text "Color: ", and the input field associated with the second label should have the id="input-color" and of type="text". Make sure the for attribute of the label matches the input field's id.
+
+The 2 buttons should have the id "highlight-button" and "clear-button", and text "Highlight Date" and "Clear All" respectively.
+
+
+
+CSS:
+
+
+The div with class="calendar" should have a grid layout, with grid-template-columns having repeat(7, 100px) value and grid-template-rows having repeat(6, 100px) value. Give a gap of 5px, and a bottom margin of 10px.
+
+The divs with class="calendar-day" should display flex, with justify content, and align items properties as center. Add a border of 1px solid and color rgb(0, 0, 0).
+
+Give div.input-wrapper a flex display, and align items as center.
+
+Last, the buttons should have a left margin of 10px.
+
+
+
+
+JS:
+
+
+The two input fields, one for the date and the other for the color, are where the user will input the date and the color.
+
+On clicking the "Highlight Date" button, update the background color of the selected date with the input color. And make sure, the value of both the input fields should reset.
+
+On clicking the "Clear All" button, restore the initial background color of all dates in the calendar.
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./css/r6.css">
+    <script  defer src="./js/r4.js"></script>
+</head>
+<body>
+    <div class="calendar">
+        <div class="calendar-day">Sun</div>
+        <div class="calendar-day">Mon</div>
+        <div class="calendar-day">Tues</div>
+        <div class="calendar-day">Wed</div>
+        <div class="calendar-day">Thurs</div>
+        <div class="calendar-day">Fri</div>
+        <div class="calendar-day">Sat</div>
+        <div class="calendar-day">1</div>
+        <div class="calendar-day">2</div>
+        <div class="calendar-day">3</div>
+        <div class="calendar-day">4</div>
+        <div class="calendar-day">5</div>
+        <div class="calendar-day">6</div>
+        <div class="calendar-day">7</div>
+        <div class="calendar-day">8</div>
+        <div class="calendar-day">9</div>
+        <div class="calendar-day">10</div>
+        <div class="calendar-day">11</div>
+        <div class="calendar-day">12</div>
+        <div class="calendar-day">13</div>
+        <div class="calendar-day">14</div>
+        <div class="calendar-day">15</div>
+        <div class="calendar-day">16</div>
+        <div class="calendar-day">17</div>
+        <div class="calendar-day">18</div>
+        <div class="calendar-day">19</div>
+        <div class="calendar-day">20</div>
+        <div class="calendar-day">21</div>
+        <div class="calendar-day">22</div>
+        <div class="calendar-day">23</div>
+        <div class="calendar-day">24</div>
+        <div class="calendar-day">25</div>
+        <div class="calendar-day">26</div>
+        <div class="calendar-day">27</div>
+        <div class="calendar-day">28</div>
+        <div class="calendar-day">29</div>
+        <div class="calendar-day">30</div>
+        <div class="calendar-day">31</div>
+    </div>
+    <div class="input-wrapper">
+        <label for="input-date">Date:</label>
+        <input type="number" id="input-date">
+        <label for="input-color">Color:</label>
+        <input type="text" id="input-color">
+        <button id="highlight-button">Highlight Date</button>
+        <button id="clear-button">Clear All</button>
+    </div>
+<hr><br><br>
+    <div>
+        <video src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/fa5acd7d26c743eb901a28ff8031659b.mp4" type="video/mp4" width="600px" height="300px" controls></video>
+    </div>
+    
+</body>
+</html>
