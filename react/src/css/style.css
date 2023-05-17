@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    margin: 50px 100px;
+    text-align: center;
+    align-items: center;
+}
+.size{
+    font-size: 50px;
+    color: black;
+    border-radius: 10px;
+    width: 50px;
+}
+.mainaa{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+}
+.mainaa p{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+}
