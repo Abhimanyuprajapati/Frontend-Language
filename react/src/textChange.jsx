@@ -14,7 +14,6 @@ const Practice4 = ()=>{
             <button onClick={onclicker}>change the title of the text</button>
             <hr />
             <h1>count :{count}</h1>
-            
         </div>
     )
 }
