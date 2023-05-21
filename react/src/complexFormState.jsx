@@ -41,21 +41,24 @@ const Complexformstate=()=>{                       // Arrow function hai
 export default Complexformstate;
 */
 
+// ----------------------------------------------------------------------
+
+
 // second method  
 
-const Complexformstate=()=>{
-    const [first,setFirst] = useState("");
-    const [second,setSecond]=useState("");
-    const [email,setEmail]=useState("");
+// const Complexformstate=()=>{
+    // const [first,setFirst] = useState("");
+    // const [second,setSecond]=useState("");
+    // const [email,setEmail]=useState("");
 
-    // 1  refer is this
-    const Mapping={
-        first:setFirst,
-        second:setSecond,
-        email:setEmail,
-    };
+//     // 1  refer is this
+//     const Mapping={
+//         first:setFirst,
+//         second:setSecond,
+//         email:setEmail,
+//     };
 
-    const forminputHandler=(field, value)=>{
+//     const forminputHandler=(field, value)=>{
         /*
 
         if(field=="first"){
@@ -98,31 +101,81 @@ const Complexformstate=()=>{
         // more best is always go with object 
         // by mapping method
         //    created the object refer 1 upper
-         const set=Mapping[field];
-         set(value);
+    //      const set=Mapping[field];
+    //      set(value);
 
-    }
+    // }
+
     
+//     return (
+//         <div className="container">
+//             <label>First name:</label>
+//             <input onChange={(event)=>{
+//                 forminputHandler("first",event.target.value);
+//             }}
+//             type="text" value={first} placeholder="john"/> 
+
+//             <label>Second name:</label>
+//             <input onChange={(event)=>{
+//                 forminputHandler("second",event.target.value);
+//             }} 
+//             type="text" value={second} placeholder="chena"/>
+
+//             <label>Email:</label>
+//             <input onChange={(event)=>{
+//                 forminputHandler("email",event.target.value);
+//             }} 
+//             type="text" value={email} placeholder="johnchena@110"/>
+//         </div>
+//     )
+// }
+// export default Complexformstate;
+
+// ------------------------------------------------------------------
+// one more ways is use the name attribute in form
+
+const Complexformstate=()=>{
+
+    const [first,setFirst] = useState("");
+    const [second,setSecond]=useState("");
+    const [email,setEmail]=useState("");
+
+        const Mapping={
+        first:setFirst,
+        second:setSecond,
+        email:setEmail,
+    };
+
+    const formhandler=(event)=>{
+        const field=event.target.name;
+        const value=event.target.value;
+        const set=Mapping[field];
+        set(value);
+    }
     return (
         <div className="container">
             <label>First name:</label>
-            <input onChange={(event)=>{
-                forminputHandler("first",event.target.value);
-            }}
-            type="text" value={first} placeholder="john"/> 
+            <input onChange={formhandler}
+             type="text" 
+             value={first} 
+             placeholder="john"
+             name="first"/> 
 
             <label>Second name:</label>
-            <input onChange={(event)=>{
-                forminputHandler("second",event.target.value);
-            }} 
-            type="text" value={second} placeholder="chena"/>
+            <input onChange={formhandler} 
+             type="text" 
+             value={second} 
+             placeholder="chena"
+             name="second"/>
 
             <label>Email:</label>
-            <input onChange={(event)=>{
-                forminputHandler("email",event.target.value);
-            }} 
-            type="text" value={email} placeholder="johnchena@110"/>
-        </div>
+            <input onChange={formhandler} 
+             type="text" 
+             value={email} 
+             placeholder="johnchena@110"
+             name="email"/>        
+        </div> 
     )
 }
+
 export default Complexformstate;

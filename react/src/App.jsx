@@ -4,7 +4,9 @@
 // import Practice4 from "./textChange"        // combo of both
 // import Mapping from "./usingMap"         // mapping the elements in react 
 // import Props from "./props"              // pending we have to do
-import Complexformstate from "./complexFormState";    // Complex form of state
+// import Inlinefunction from "./onchangeFunction"  // this is for inline arrow function in form elements
+// import RenderList from "./renderList"       // render the list by using useState()
+// import Complexformstate from "./complexFormState";    // Complex form of state
 function App() {
  
   return (
@@ -15,7 +17,9 @@ function App() {
       {/* <Practice4 /> */}
       {/* <Mapping /> */}
       {/* <Props /> */}
-      <Complexformstate />
+      {/* <Inlinefunction /> */}
+      {/* <RenderList /> */}
+      {/* <Complexformstate /> */}
     </>
   )
 }
